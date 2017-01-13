@@ -1,0 +1,47 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1599D6E1-4B2D-3CA8-4BA3-F3B06F1A463B}"
+	ProjectSection(SolutionItems) = preProject
+		CHANGELOG.md = CHANGELOG.md
+		global.json = global.json
+		nuget.config = nuget.config
+		README.md = README.md
+	EndProjectSection
+	ProjectSection(FolderGlobals) = preProject
+		global_1json__JSONSchema = http://json.schemastore.org/global
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{57883944-F616-22FC-FB52-F667696F9600}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{04962435-B8CB-4ABE-5755-B5B94F783B51}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Digipolis.ApplicationServices", "src\Digipolis.ApplicationServices\Digipolis.ApplicationServices.xproj", "{64D5A7FB-5806-7A26-28B8-ADCFE7A47AB7}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Digipolis.ApplicationServices.UnitTests", "test\Digipolis.ApplicationServices.UnitTests\Digipolis.ApplicationServices.UnitTests.xproj", "{7C5D2E69-ED28-4378-4DD4-2CB88FF8C9A5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{64D5A7FB-5806-7A26-28B8-ADCFE7A47AB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64D5A7FB-5806-7A26-28B8-ADCFE7A47AB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64D5A7FB-5806-7A26-28B8-ADCFE7A47AB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64D5A7FB-5806-7A26-28B8-ADCFE7A47AB7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C5D2E69-ED28-4378-4DD4-2CB88FF8C9A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C5D2E69-ED28-4378-4DD4-2CB88FF8C9A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C5D2E69-ED28-4378-4DD4-2CB88FF8C9A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C5D2E69-ED28-4378-4DD4-2CB88FF8C9A5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{64D5A7FB-5806-7A26-28B8-ADCFE7A47AB7} = {57883944-F616-22FC-FB52-F667696F9600}
+		{7C5D2E69-ED28-4378-4DD4-2CB88FF8C9A5} = {04962435-B8CB-4ABE-5755-B5B94F783B51}
+	EndGlobalSection
+EndGlobal
