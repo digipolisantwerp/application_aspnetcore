@@ -20,11 +20,19 @@ Application services for ASP.NET Core applications.
 ## Installation
 
 This package is hosted on Myget on the following feed : [https://www.myget.org/F/digipolisantwerp/api/v3/index.json](https://www.myget.org/F/digipolisantwerp/api/v3/index.json).  
-To add it to a project, you add the package to the project.json :
+To add it to a project, you add the package to the csproj file :
+
+```xml
+  <ItemGroup>
+    <PackageReference Include="Digipolis.ApplicationServices" Version="2.0.0" />
+  </ItemGroup>
+``` 
+
+or if your project still works with project.json :
 
 ``` json 
 "dependencies": {
-    "Digipolis.ApplicationServices":  "1.0.0"
+    "Digipolis.ApplicationServices":  "2.0.0"
  }
 ``` 
 

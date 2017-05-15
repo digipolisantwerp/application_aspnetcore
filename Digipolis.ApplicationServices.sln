@@ -1,12 +1,10 @@
-
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.6
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1599D6E1-4B2D-3CA8-4BA3-F3B06F1A463B}"
 	ProjectSection(SolutionItems) = preProject
 		CHANGELOG.md = CHANGELOG.md
-		global.json = global.json
 		nuget.config = nuget.config
 		README.md = README.md
 	EndProjectSection
@@ -18,9 +16,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{57883944-F61
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{04962435-B8CB-4ABE-5755-B5B94F783B51}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Digipolis.ApplicationServices", "src\Digipolis.ApplicationServices\Digipolis.ApplicationServices.xproj", "{64D5A7FB-5806-7A26-28B8-ADCFE7A47AB7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Digipolis.ApplicationServices", "src\Digipolis.ApplicationServices\Digipolis.ApplicationServices.csproj", "{64D5A7FB-5806-7A26-28B8-ADCFE7A47AB7}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Digipolis.ApplicationServices.UnitTests", "test\Digipolis.ApplicationServices.UnitTests\Digipolis.ApplicationServices.UnitTests.xproj", "{7C5D2E69-ED28-4378-4DD4-2CB88FF8C9A5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Digipolis.ApplicationServices.UnitTests", "test\Digipolis.ApplicationServices.UnitTests\Digipolis.ApplicationServices.UnitTests.csproj", "{7C5D2E69-ED28-4378-4DD4-2CB88FF8C9A5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
