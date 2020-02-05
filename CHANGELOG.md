@@ -1,6 +1,6 @@
 # ApplicationServices Toolbox
 
-## 3.0.0
+## 3.1.0
 
 - Upgrade to .Net Core 3.1
 
