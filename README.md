@@ -24,7 +24,7 @@ To add it to a project, you add the package to the csproj file :
 
 ```xml
   <ItemGroup>
-    <PackageReference Include="Digipolis.ApplicationServices" Version="2.0.0" />
+    <PackageReference Include="Digipolis.ApplicationServices" Version="3.1.0" />
   </ItemGroup>
 ``` 
 
@@ -32,7 +32,7 @@ or if your project still works with project.json :
 
 ``` json 
 "dependencies": {
-    "Digipolis.ApplicationServices":  "2.0.0"
+    "Digipolis.ApplicationServices":  "3.1.0"
  }
 ``` 
 
