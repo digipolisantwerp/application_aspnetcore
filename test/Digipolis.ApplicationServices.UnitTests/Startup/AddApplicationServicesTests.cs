@@ -10,7 +10,7 @@ namespace Digipolis.ApplicationServices.UnitTests.Startup
     public class AddApplicationServicesTests
     {
         [Fact]
-        void OptionsAreRegisteredAsSingleton()
+        public void OptionsAreRegisteredAsSingleton()
         {
             var services = new ServiceCollection();
             services.AddApplicationServices(options => options.ApplicationId = "123456789");
@@ -18,12 +18,12 @@ namespace Digipolis.ApplicationServices.UnitTests.Startup
             var registrations = services.Where(sd => sd.ServiceType == typeof(IConfigureOptions<ApplicationServicesOptions>))
                                         .ToArray();
 
-            Assert.Equal(1, registrations.Count());
+            Assert.Single(registrations);
             Assert.Equal(ServiceLifetime.Singleton, registrations[0].Lifetime);
         }
 
         [Fact]
-        void ApplicationContextIsRegisteredAsSingletonInstance()
+        public void ApplicationContextIsRegisteredAsSingletonInstance()
         {
             var services = new ServiceCollection();
             services.AddApplicationServices(options => options.ApplicationId = "123456789");
@@ -32,12 +32,12 @@ namespace Digipolis.ApplicationServices.UnitTests.Startup
                                                sd.ImplementationInstance?.GetType() == typeof(ApplicationContext))
                                         .ToArray();
 
-            Assert.Equal(1, registrations.Count());
+            Assert.Single(registrations);
             Assert.Equal(ServiceLifetime.Singleton, registrations[0].Lifetime);
         }
 
         [Fact]
-        void ApplicationIdNullRaisesArgumentNullException()
+        public void ApplicationIdNullRaisesArgumentNullException()
         {
             var services = new ServiceCollection();
             var ex = Assert.Throws<ArgumentNullException>(() => services.AddApplicationServices(options => options.ApplicationId = null));
@@ -45,7 +45,7 @@ namespace Digipolis.ApplicationServices.UnitTests.Startup
         }
 
         [Fact]
-        void ApplicationIdEmptyRaisesArgumentException()
+        public void ApplicationIdEmptyRaisesArgumentException()
         {
             var services = new ServiceCollection();
             var ex = Assert.Throws<ArgumentException>(() => services.AddApplicationServices(options => options.ApplicationId = ""));
@@ -53,7 +53,7 @@ namespace Digipolis.ApplicationServices.UnitTests.Startup
         }
 
         [Fact]
-        void ApplicationIdWhiteSpaceRaisesArgumentException()
+        public void ApplicationIdWhiteSpaceRaisesArgumentException()
         {
             var services = new ServiceCollection();
             var ex = Assert.Throws<ArgumentException>(() => services.AddApplicationServices(options => options.ApplicationId = "   "));
@@ -61,7 +61,7 @@ namespace Digipolis.ApplicationServices.UnitTests.Startup
         }
 
         [Fact]
-        void ApplicationIdAndNameAreSetInApplicationContext()
+        public void ApplicationIdAndNameAreSetInApplicationContext()
         {
             var services = new ServiceCollection();
             services.AddApplicationServices(options => {
@@ -76,7 +76,7 @@ namespace Digipolis.ApplicationServices.UnitTests.Startup
         }
 
         [Fact]
-        void ApplicationNameNullTakesProjectName()
+        public void ApplicationNameNullTakesProjectName()
         {
             var services = new ServiceCollection();
             services.AddApplicationServices(options => {
@@ -91,7 +91,7 @@ namespace Digipolis.ApplicationServices.UnitTests.Startup
         }
 
         [Fact]
-        void ApplicationNameEmptyTakesProjectName()
+        public void ApplicationNameEmptyTakesProjectName()
         {
             var services = new ServiceCollection();
             services.AddApplicationServices(options => {
@@ -105,7 +105,7 @@ namespace Digipolis.ApplicationServices.UnitTests.Startup
         }
 
         [Fact]
-        void ApplicationNameWhiteSpaceTakesProjectName()
+        public void ApplicationNameWhiteSpaceTakesProjectName()
         {
             var services = new ServiceCollection();
             services.AddApplicationServices(options => {
